@@ -7,5 +7,5 @@ async def startup():
     pass
 
 @app.api_route('/api/search', include_in_schema=True)
-async def searching(request: Request, search: str = None):
+async def searching(search: str = None):
     return {'search': search}
